@@ -28,7 +28,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 
 
-group :development :test do 
+group :development do 
 	gem 'sqlite3'	
 end
 group :production do 
