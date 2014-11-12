@@ -5,5 +5,7 @@
   <%= @pin.description %>
 </p>
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<% if User.find_by_id(@pin.user_id) == current_user %>
+	<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<% end%>
 <%= link_to 'Back', pins_path %>
